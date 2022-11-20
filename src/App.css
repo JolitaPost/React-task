@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #89b1bc;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+.button-orange {
+  background-color: orange;
+}
+
+.search-input {
+  margin-bottom: 10px;
+}
+
+.posts-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.post {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  width: 25%;
+}
+
