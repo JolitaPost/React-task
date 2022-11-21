@@ -6,7 +6,7 @@ export const Title = styled.h1 `
 `;
 
 export const Wrapper = styled.div`
-    background-color: #89b1bc;
+    background-color:#adc1c4;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,16 +18,46 @@ export const Wrapper = styled.div`
 `;
 
 export const Form = styled.form`
-    display: flex;
-    gap: 20px;
-    height: 30vh;
-    flex-direction: column;
-    width: 50%;   
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 220px;
+    align-items: column;
+    border: 2px solid grey;
+    border-radius: 5px;
 `
-export const NavBar = styled.div`
+export const FormInput =styled.input`
     display: flex;
     justify-content: center;
-    gap: 20px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+`
+export const Button = styled.button`
+    background-color: #98a8bd;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+`
+
+export const NavBar = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 50px;
     margin: 10px;
     flex-wrap: wrap;
+`
+export const Image = styled.img`
+    justify-content: left;
+    margin-left: 30px; 
+`
+export const NavWrapper = styled.div`
+    background-color: #adc1c4;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-space-between;
+    border: 2px solid grey;
 `

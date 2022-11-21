@@ -9,7 +9,7 @@ export const PageLayout = ({ user, onLogout }) => {
     return (
         <div>
             <Navigation onLogout={onLogout} />
-            Welcome, {user.username}! 
+
             <Outlet />
         </div>
     );

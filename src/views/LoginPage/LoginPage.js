@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Title, Wrapper, Form } from '../../components/StyledComponents/StyledComponents.js';
+import { Title, Wrapper, Form, FormInput, Button } from '../../components/StyledComponents/StyledComponents.js';
 
 const LoginPage = ({ onLogin }) => {
     const [username, setUsername] = useState('');
@@ -21,9 +21,9 @@ const LoginPage = ({ onLogin }) => {
         <Wrapper>
             <Title>Login page</Title>
             <Form onSubmit={handleSubmit}>
-                <input placeholder="Username" onChange={handleUsernameChange} />
-                <input type="password" placeholder="Password" />
-                <button>Login</button>
+                <FormInput placeholder="Username" onChange={handleUsernameChange} />
+                <FormInput type="password" placeholder="Password" />
+                <Button>Login</Button>
             </Form>
         </Wrapper>
     )

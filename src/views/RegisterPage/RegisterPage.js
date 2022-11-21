@@ -1,19 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Title, Wrapper, Form } from '../../components/StyledComponents/StyledComponents.js'
+import { Title, Wrapper, Form, FormInput, Button } from '../../components/StyledComponents/StyledComponents.js'
 
+   const RegisterPage = ({ onLogin }) => {
+   const [username, setUsername] = useState('');
+   const navigate = useNavigate();
 
-const RegisterPage = ({ onLogin }) => {
-    const [username, setUsername] = useState('');
-    const navigate = useNavigate();
-
-    const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
         e.preventDefault();
         onLogin(username);
 
-        // fetch
-
-        navigate('/');
+          
+      navigate('/');
     };
     const handleUsernameChange = (e) => setUsername(e.target.value);
 
@@ -21,9 +19,9 @@ const RegisterPage = ({ onLogin }) => {
         <Wrapper>
             <Title>Register page</Title>
             <Form onSubmit={handleSubmit}>
-                <input placeholder="Username" onChange={handleUsernameChange} />
-                <input type="password" placeholder="Password" />
-                <button>Register</button>
+               <FormInput placeholder="Username" onChange={handleUsernameChange} />
+               <FormInput type="password" placeholder="Password" />
+              <Button>Register</Button>
             </Form>
         </Wrapper>
     )
